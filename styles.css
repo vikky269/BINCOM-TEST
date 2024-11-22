@@ -154,7 +154,6 @@ body {
 .photo-gallery {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 15px;
   margin: 20px auto;
 }
@@ -312,10 +311,10 @@ body {
     }
 
 
-    .portfolio-gallery{
+    .portfolio-gallery .imgcon{
       margin-bottom: 10px;
     }
-    
+
     #contact{
       display: flex;
       flex-direction: column;
