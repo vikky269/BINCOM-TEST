@@ -359,6 +359,9 @@ body {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+    #contact{
+      margin-top: 3px;
+    }
     .burger{
       display: block;
     }
