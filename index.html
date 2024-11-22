@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Amune - Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Victor Amune</h1>
+      <p>Frontend Developer | Biomedical Engineer | Online Tutor</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="victor.jpg" alt="">
+    <div>
+        <p>I am a passionate Frontend Developer with expertise in React, Vue, and React Native, complemented by a strong background in Biomedical Engineering. <br>
+            I also have experience as an online tutor specializing in Mathematics, Physics, Chemistry, and Biology,
+         particularly familiar with the GCSE and British curricula.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>
+        <i class="fas fa-code"></i> 
+        <strong>Frontend Development:</strong> React.js, Vue.js, React Native
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-paint-brush"></i> 
+        <strong>UI Frameworks:</strong> Tailwind CSS, Vuetify
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-server"></i> 
+        <strong>Backend Basics:</strong> Node.js
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-chalkboard-teacher"></i> 
+        <strong>Tutoring:</strong> GCSE Curriculum, STEM Subjects
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%;"></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-gallery">
+        <div class="imgcon">
+            <img src="/projectimg/chatify.png" alt="Project 1">
+            <a href="http://chatify.netlify.app">View Project</a>
+        </div>
+        <div class="imgcon">
+            <img src="/projectimg/fitclub.png" alt="Project 2">
+            <a href="https://amunefitclub.netlify.app/">View Project</a>
+        </div>
+        <div class="imgcon">
+            <img src="/projectimg/mamasrecipe.png" alt="Project 3">
+            <a href="https://mamasrecipe.netlify.app/">View Project</a>
+        </div>
+        <div class="imgcon">
+            <img src="/projectimg/onlearnx.png" alt="Project 4">
+            <a href="https://onlearnx.netlify.app/">View Project</a>
+        </div>
+        <div class="imgcon">
+            <img src="/projectimg/vanhire.png" alt="Project 5">
+            <a href="http://https://vanz.netlify.app/">View Project</a>
+        </div>
+    </div>
+  </section>
+
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <p>Here are some moments with my friends and me!</p>
+    <div class="photo-gallery">
+      <img src="victor.jpg" alt="Photo 1 of Victor">
+      <img src="victor.jpg" alt="Photo 2 with Friends">
+      <img src="victor.jpg" alt="Photo 3 with Friends">
+      <img src="victor.jpg" alt="Photo 4 with Friends">
+      <img src="victor.jpg" alt="Photo 5 with Friends">
+    </div>
+  </section>
+
+  <section id="contact">
+    <img src="contact.png" alt="">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Victor Amune. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
