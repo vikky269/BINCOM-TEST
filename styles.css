@@ -315,12 +315,9 @@ body {
     .portfolio-gallery .imgcon{
       margin-bottom: 20px;
     }
-  .photo-gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+
+  .photo-gallery img{
+    margin-bottom: 15px;
   }
     #contact{
       display: flex;
