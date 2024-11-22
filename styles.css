@@ -305,10 +305,15 @@ body {
       overflow-x: hidden;
     }
 
-    .skills-list{
+    .skills-list li{
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      margin-bottom: 15px;
+    }
+
+
+    .portfolio-gallery{
+      margin-bottom: 10px;
     }
     
     #contact{
