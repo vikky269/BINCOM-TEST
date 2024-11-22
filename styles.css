@@ -1,4 +1,9 @@
 /* styles.css */
+
+*{
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,8 +15,16 @@ body {
     background: #333;
     color: white;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   
+  .burger{
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
   nav ul {
     display: flex;
     justify-content: center;
@@ -35,20 +48,31 @@ body {
     color: white;
     font-size: 16px;
   }
+
+  header span{
+   font-size: 28px;
+   background-color: white;
+   padding: 10px;
+   border-radius: 100%;
+   color: #333;
+   font-weight: bold;
+   cursor: pointer;
+  }
   
   #hero {
     background: url('philipp.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    width: 100%;
   }
   .hero-content{
     font-size: 24px;
   }
 
   #about img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     backdrop-filter: none;
   }
@@ -63,11 +87,15 @@ body {
   }
 
 /* Skills Section Styling */
+
 #skills {
-  padding: 20px;
-  background-color: #f9f9f9; 
+  padding: 20px; /* Retain padding for inner spacing */
+  background-color: #f9f9f9;
   border-radius: 8px;
   margin: 20px 0;
+  width: 100%; /* Ensure the div fills the parent container */
+  max-width: 100%; /* Prevent overflow in case of extra padding or borders */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 #skills h2 {
@@ -209,7 +237,7 @@ body {
 
   .contact-container{
     background-color: rgb(59, 39, 59);
-    padding: 15px;
+    padding: 10px;
     border-radius: 12px;
   }
 
@@ -257,4 +285,68 @@ body {
       display: flex;
       flex-direction: column;
     }
+    #portfolio-gallery{
+      display: flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+    }
   }
+ 
+   
+  @media only screen and (max-width: 560px) {
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    #contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin: auto 20px;
+    }
+    #contact img{
+     max-width: 380px;
+     height: auto;
+    }
+
+    #contactForm{
+      max-width: 250px;
+    }
+
+    header span {
+      margin-left: 10px;
+      font-size:20px;
+    }
+    nav ul {
+      display: none
+    }
+
+    nav ul.active{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      position: absolute;
+      top: 12%;
+      left: 0%;
+      background-color: #333;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .burger{
+      display: block;
+    }
+  }
+ 
+  
+  

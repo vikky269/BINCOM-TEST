@@ -10,14 +10,19 @@
 </head>
 <body>
   <header>
+     <span>AV</span>
     <nav>
-      <ul>
+      <ul id="nav-menu">
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div id="burger-toggle"> 
+      <img src="burger.png" class="burger" />
+    </div>
   </header>
 
   <section id="hero">
@@ -29,7 +34,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <img src="victor.jpg" alt="">
+    <img src="victor.jpg" alt="" class="victorimg">
     <div>
         <p>I am a passionate Frontend Developer with expertise in React, Vue, and React Native, complemented by a strong background in Biomedical Engineering. <br>
             I also have experience as an online tutor specializing in Mathematics, Physics, Chemistry, and Biology,
@@ -41,28 +46,28 @@
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>
-        <i class="fas fa-code"></i> 
+        <i class="fas fa-code"></i>
         <strong>Frontend Development:</strong> React.js, Vue.js, React Native
         <div class="progress-bar">
           <div class="progress" style="width: 85%;"></div>
         </div>
       </li>
       <li>
-        <i class="fas fa-paint-brush"></i> 
+        <i class="fas fa-paint-brush"></i>
         <strong>UI Frameworks:</strong> Tailwind CSS, Vuetify
         <div class="progress-bar">
           <div class="progress" style="width: 90%;"></div>
         </div>
       </li>
       <li>
-        <i class="fas fa-server"></i> 
+        <i class="fas fa-server"></i>
         <strong>Backend Basics:</strong> Node.js
         <div class="progress-bar">
           <div class="progress" style="width: 70%;"></div>
         </div>
       </li>
       <li>
-        <i class="fas fa-chalkboard-teacher"></i> 
+        <i class="fas fa-chalkboard-teacher"></i>
         <strong>Tutoring:</strong> GCSE Curriculum, STEM Subjects
         <div class="progress-bar">
           <div class="progress" style="width: 95%;"></div>
@@ -70,7 +75,6 @@
       </li>
     </ul>
   </section>
-  
   
 
   <section id="portfolio">
